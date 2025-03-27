@@ -34,6 +34,7 @@
             var vat;
 
 	var cert;
+	var o_h;		
 
 			
             var testnum;
@@ -46,11 +47,12 @@
                 sobisae = (cif) * 0.05;
                 education = sobisae * 0.3;
                 vat = (cif + sobisae + education) * 0.1;
-	    cert = 4500000;
-                
+	   	cert = 4500000;
+                o_h = 2300000;
+				
                 testnum = cif+sobisae+education+vat;
                 
-                testnum = Math.floor(testnum) + cert + 5000000;
+                testnum = Math.floor(testnum) + cert + o_h + 5000000;
                 
                 testnum = addComma(testnum);
                 
@@ -68,7 +70,7 @@
                 
                 testnum = cif+tariff+sobisae+education+vat;
                 
-                testnum = Math.floor(testnum) + cert + 5000000;
+                testnum = Math.floor(testnum) + cert + o_h + 5000000;
                 
                 testnum = addComma(testnum);
                 
@@ -86,7 +88,7 @@
                 
                 testnum = cif+tariff+sobisae+education+vat;
                 
-                testnum = Math.floor(testnum) + cert + 5000000;
+                testnum = Math.floor(testnum) + cert + o_h + 5000000;
                 
                 testnum = addComma(testnum);
                 
@@ -104,7 +106,7 @@
                 
                 testnum = cif+tariff+sobisae+education+vat;
                 
-                testnum = Math.floor(testnum) + cert + 5000000;
+                testnum = Math.floor(testnum) + cert + o_h + 5000000;
                 
                 testnum = addComma(testnum);
                 
@@ -178,7 +180,7 @@
 <option value="12000">일반 항공</option>
 <option value="16000">대한항공/아시아나항공</option>
 <option value="3000">해상운송</option>
-<option value="5000">전기차해상운송</option>
+<option value="4500">전기차해상운송</option>
 </select>
     
 
